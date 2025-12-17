@@ -4,7 +4,7 @@ potato = Resistor(5000)
 tomato = Resistor(2000)
 
 req = series_resistance([potato,tomato])
-print("Potato Tomato:", req)
+print("Potato,Tomato?", req,'Ω')
 
 req_parallel = parallel_resistance([potato,tomato])
-print("Chopped!", req_parallel)
+print("Chopped!", req_parallel,'Ω')

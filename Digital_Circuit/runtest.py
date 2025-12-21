@@ -1,4 +1,4 @@
-from dc_core import Resistor, VoltageSource, Circuit, CurrentSource, series_resistance, parallel_resistance
+from Core.Components.components import VoltageSource, Resistor, CurrentSource
 
 friendship = VoltageSource(9001, 1,0)
 potato = Resistor(5000, 1,2)
@@ -28,4 +28,3 @@ print("\nIn Series:")
 print(f"Friendship goes through Potato, from {friendship.pos_node}, "
       f"to {potato.z_node}, then through Tomato from {potato.z_node} to {friendship.neg_node}, "
       f"\nthrough friendship 0 becomes 1.")
-print("="*40)
